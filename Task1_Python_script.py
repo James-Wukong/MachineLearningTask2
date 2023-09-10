@@ -17,7 +17,7 @@ def get_page():
 	# Code ends here
 	
 	# handling possible error
-	if not re.match(r'https://medium.com/', url):
+	if not re.match(r'https?://medium.com/', url):
 		print('Please enter a valid website, or make sure it is a medium article')
 		sys.exit(1)
 
